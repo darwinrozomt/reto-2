@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+
+<head>
+    <title> Clientes disfraces </title>
+    <head>MODULO CLIENTES</head>
+
+<!-- Llamado al jquery, que establece una sintaxis mas facil-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<!-- Lllamado al archivo jscript -->
+<script type="text/javascript" src="cliente.js"></script> 
+<link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+<body>
+
+    <h1>Datos del cliente</h1>
+<!-- br salto de linea --> 
+
+<input type="number" id="idCliente" placeholder="Id de cliente"><br>
+    <input type="text" id="nombreCliente" placeholder="Nombre"><br> 
+    <input type="text" id="mailCliente" placeholder="Correo"><br>
+    <input type="number" id="edadCliente" placeholder="Edad"><br><br>
+
+<!-- Id de cliente: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   <input type="number" id="idCliente"><br>
+    Nombre de cliente: &nbsp <input type="text" id="nombreCliente"><br> 
+    Correo de cliente: &nbsp &nbsp <input type="text" id="mailCliente"><br>
+    Edad cliente: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="number" id="edadCliente"><br><br><br>-->
+
+    <button onclick="guardarCliente()">GUARDAR CLIENTE</button> &nbsp
+    <button onclick="editarCliente()">ACTUALIZAR CLIENTES</button> &nbsp
+    <button onclick="leerClientes()">TRAER CLIENTES</button>
+
+    <br><br>
+    <A HREF="index.html"> <button>REGRESAR AL MENU PRINCIPAL</button> </A> <br>
+    <hr><br>
+   
+    <div id="listaClientes">
+
+    </div>
+
+
+
+</body>    
+</html>

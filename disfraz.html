@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+
+<head>
+    <title> Inventario disfraces </title>
+    <head>MODULO DISFRACES</head>
+
+<!-- Llamado al jquery, que establece una sintaxis mas facil-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<!-- Lllamado al archivo jscript -->
+<script type="text/javascript" src="disfraz.js"></script> 
+
+
+
+<body>
+
+    <h1>Datos del disfraz</h1>
+<!-- br salto de linea --> 
+
+    <input type="number" id="idDisfraz" placeholder="Id"><br>
+    <input type="text" id="marcaDisfraz"placeholder="Marca"><br> 
+    <input type="number" id="modeloDisfraz"placeholder="Modelo (año)"><br>
+    <input type="number" id="categoriaDisfraz"placeholder="Categoría"><br>
+    <input type="text" id="nombreDisfraz"placeholder="Nombre"><br>
+
+    <br>
+
+   <!-- Id del disfraz: &nbsp &nbsp <input type="number" id="idDisfraz" placeholder="prueba"><br>
+    Marca: &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" id="marcaDisfraz"><br> 
+    Modelo(año): &nbsp &nbsp &nbsp  <input type="number" id="modeloDisfraz"><br>
+    Categoria Disfraz: &nbsp<input type="number" id="categoriaDisfraz"><br>
+    Nombre Disfraz: &nbsp &nbsp  <input type="text" id="nombreDisfraz"><br>
+    <br> --> 
+
+    <button onclick="guardarDisfraz()">GUARDAR DISFRAZ</button> &nbsp
+    <button onclick="editarDisfraz()">ACTUALIZAR DISFRAZ</button> &nbsp
+    <button onclick="leerDisfraz()">TRAER DISFRAZ</button>
+
+
+    <br><br>
+    <A HREF="index.html"> <button>REGRESAR AL MENU PRINCIPAL</button> </A> <br>
+    <hr><br>
+   
+    <div id="listaDisfraz">
+
+    </div>
+
+
+
+</body>    
+</html>

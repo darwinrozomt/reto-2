@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+
+<head>
+    <title> Mensajes disfraces </title>
+    <head>MODULO MENSAJES</head>
+
+<!-- Llamado al jquery, que establece una sintaxis mas facil-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<!-- Lllamado al archivo jscript -->
+<script type="text/javascript" src="mensaje.js"></script> 
+
+
+
+<body>
+
+    <h1>Datos del mensaje</h1>
+<!-- br salto de linea --> 
+    <input type="number" id="idMensaje" placeholder="Id mensaje">
+    <br> <br>
+    <textarea type="text" id="textoMensaje" placeholder="Escriba el mensaje" rows="10" cols="40"></textarea>
+
+
+    <br> 
+    <br>      
+
+    <button onclick="guardarMensaje()">GUARDAR MENSAJE</button> &nbsp
+    <button onclick="editarMensaje()">ACTUALIZAR MENSAJE</button> &nbsp
+    <button onclick="leerMensaje()">TRAER MENSAJES</button>
+
+    <br><br>
+    <A HREF="index.html"> <button>REGRESAR AL MENU PRINCIPAL</button> </A> <br>
+    <hr><br>
+   
+    <div id="listaMensajes">
+
+    </div>
+
+
+
+</body>    
+</html>
